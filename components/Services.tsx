@@ -41,7 +41,7 @@ const Services: React.FC<ServicesProps> = () => {
                   </ul>
                   <p className="mb-2">All inclusive from $600</p>
                   <div className="max-sm:flex justify-center">
-                     <Link href={'/uzbekistan'}>
+                     <Link href={'/tours/uzbekistan'}>
                         <button className="w-36 h-10 bg-[#277c52] text-white">
                            Read More
                         </button>
