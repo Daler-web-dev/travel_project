@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 function Index() {
@@ -14,7 +15,7 @@ function Index() {
             
 		    <div className='flex max-lg:flex-col gap-5 max-lg:gap-20 max-sm:gap-1 mt-16 max-lg:items-center'>
 
-			    <div className='flex flex-col items-center w-full p-2 max-sm:p-5 relative max-sm:bg-[#0000006e]'>
+			    <div className='flex flex-col justify-between items-center w-full p-2 max-sm:p-5 relative max-sm:bg-[#0000006e]'>
 			        <Image className='hidden max-sm:block absolute top-0 left-0 -z-10' fill alt='' src={'/mauntain/mauntain.jpeg'}></Image>
                     <div className='flex flex-col items-center'>
 					    <div className='rounded-full p-16 max-md:p-14 bg-[url("/mauntain/amirsoy.webp")] bg-cover bg-no-repeat bg-center'></div>
@@ -26,7 +27,7 @@ function Index() {
 		    		<button className='mt-5 bg-green-700 text-white w-1/2 rounded-md max-sm:text-sm py-1' title='more info'>More Info</button>
 		    	</div>
 
-		    	<div className='flex flex-col items-center w-full p-2 max-sm:p-5 relative max-sm:bg-[#0000006e]'>
+		    	<div className='flex flex-col justify-between items-center w-full p-2 max-sm:p-5 relative max-sm:bg-[#0000006e]'>
 				    <Image className='hidden max-sm:block -z-10' fill alt='' src={'/mauntain/trees4.jpg'} ></Image>
                     <div className='flex flex-col items-center'>
 					    <div className='rounded-full p-16 max-md:p-14 bg-[url("/mauntain/chorvoq.webp")] bg-cover bg-no-repeat bg-center'></div>
@@ -38,7 +39,7 @@ function Index() {
 		    		<button className='mt-5 bg-green-700 text-white rounded-md w-1/2 py-1' title='more info'>More Info</button>
 		    	</div>
 
-		    	<div className='flex flex-col items-center w-full p-2 max-sm:p-5 relative max-sm:bg-[#0000006e]'>
+		    	<div className='flex flex-col justify-between items-center w-full p-2 max-sm:p-5 relative max-sm:bg-[#0000006e]'>
 				    <Image className='hidden max-sm:block -z-10' fill alt='' src={'/mauntain/zaamin.jpg'} ></Image>
                     <div className='flex flex-col items-center'>
 					    <div className='rounded-full p-16 max-md:p-14 bg-[url("/mauntain/zaamin.webp")] bg-cover bg-no-repeat bg-center'></div>
@@ -47,13 +48,15 @@ function Index() {
 						Zaamin State Nature Reserve is located on a vast territory, including Bakhmal forestry, Zaamin forestry, Zaamin Natural Park, with a total area of 26,840 hectares.
 		    		    </p>
 					</div>
-		    		<button className='mt-5 bg-green-700 text-white rounded-md w-1/2 py-1' title='more info'>More Info</button>
+					
+					<Link className='w-1/2' href={"/tours/mountain-trip/menu"}>
+					    <button className='bg-green-700 text-white rounded-md py-1 mt-5 w-full' title='more info'>More Info</button>
+					</Link>
 		    	</div>
 
 		    </div>
         </div>
 	</div>
-    
   )
 }
 
