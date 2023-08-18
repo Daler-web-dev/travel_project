@@ -63,13 +63,13 @@ const Header: React.FC<any> = (props: Props) => {
                      >
                         <nav>
                            <ul className="flex max-sm:flex-col items-center font-semibold gap-10 max-md:gap-5 text-black ">
-                              <Link href={"/"}>
+                              <Link href={"#"}>
                                  <li>Tours</li>
                               </Link>
-                              <Link href={"/"}>
+                              <Link href={"#"}>
                                  <li>Agency</li>
                               </Link>
-                              <Link href={"/"}>
+                              <Link href={"#"}>
                                  <li>Онлайн-запись</li>
                               </Link>
                            </ul>
