@@ -1,12 +1,30 @@
+// import { useForm } from "react-hook-form"
 import Link from "next/link";
 
 import TextField from "@mui/material/TextField";
 
 import { BsInstagram } from "react-icons/bs";
 
+// type Inputs = {
+//   name: string,
+//   surname: string,
+//   email:string,
+//   subject:string
+// }
+
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
+
+   // const {
+   //    register,
+   //    handleSubmit,
+   //    watch,
+   //    formState: { errors },
+   //  } = useForm<Inputs>()
+   //  const onSubmit = (data:any) => console.log(data)
+
+
    return (
       <footer className="px-20 py-10 max-lg:px-5 bg-[#fff]">
          <div className="flex max-md:flex-col justify-between">
@@ -16,7 +34,7 @@ const Footer: React.FC<FooterProps> = () => {
                      Central Asia Travel Agency
                   </h3>
                </div>
-               <div className="flex gap-14 ">
+               <div className="flex gap-14">
                   <div className="">
                      <ul className="flex flex-col gap-2">
                         <li className="text-sm">52 Golomb Street, POB</li>
@@ -45,10 +63,10 @@ const Footer: React.FC<FooterProps> = () => {
                <div className="mb-10">
                   <h3 className="text-4xl">Contact Us</h3>
                </div>
-               <div className="">
+               <div >
                   <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-5">
                      <TextField label="First Name" variant="standard" />
-                     <TextField label="Last Name" variant="standard" />
+                     <TextField label="Last Name" variant="standard"/>
                      <TextField label="Email" variant="standard" />
                      <TextField label="Subject" variant="standard" />
                   </div>
@@ -63,7 +81,7 @@ const Footer: React.FC<FooterProps> = () => {
                      />
                   </div>
                   <div className="mt-5">
-                     <button className="w-36 h-12 font-medium rounded-full bg-[#277c52] text-white">
+                     <button type="submit" className="w-36 h-12 font-medium rounded-full bg-[#277c52] text-white">
                         Submit
                      </button>
                   </div>
