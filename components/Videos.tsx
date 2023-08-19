@@ -76,7 +76,7 @@ const Videos: React.FC<VideosProps> = () => {
     </div>
 		{
 			videos.map((item:any)=>(
-				<VideosChild item={item} videoStart={videoStart}/>
+				<VideosChild key={item.id} item={item} videoStart={videoStart}/>
 			))
 		}
         

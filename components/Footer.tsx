@@ -1,28 +1,28 @@
-// import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form"
 import Link from "next/link";
 
 import TextField from "@mui/material/TextField";
 
 import { BsInstagram } from "react-icons/bs";
 
-// type Inputs = {
-//   name: string,
-//   surname: string,
-//   email:string,
-//   subject:string
-// }
+type Inputs = {
+  name: string,
+  surname: string,
+  email:string,
+  subject:string
+}
 
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
 
-   // const {
-   //    register,
-   //    handleSubmit,
-   //    watch,
-   //    formState: { errors },
-   //  } = useForm<Inputs>()
-   //  const onSubmit = (data:any) => console.log(data)
+   const {
+      register,
+      handleSubmit,
+      watch,
+      formState: { errors },
+    } = useForm<Inputs>()
+    const onSubmit = (data:any) => console.log(data)
 
 
    return (
