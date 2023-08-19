@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { styled, alpha } from "@mui/material/styles";
 
-import MuiAccordion, { AccordionProps } from "@mui/material/Accordion";
 import MuiAccordionSummary, {
    AccordionSummaryProps,
 } from "@mui/material/AccordionSummary";
-import MuiAccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
+import Typography from "@mui/material/Typography";
+import { styled, alpha } from "@mui/material/styles";
+import MuiAccordionDetails from "@mui/material/AccordionDetails";
+import MuiAccordion, { AccordionProps } from "@mui/material/Accordion";
 
 import { BiSearch } from "react-icons/bi";
 import { IoIosArrowDown } from "react-icons/io";
