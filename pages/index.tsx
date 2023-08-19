@@ -13,7 +13,7 @@ export default function Home() {
          <section className="">
             <Hero />
          </section>
-         <section className="pb-16 bg-[#f8f7f1]">
+         <section id="tours" className="pb-16 bg-[#f8f7f1]">
             <Services />
          </section>
          <section className="">
