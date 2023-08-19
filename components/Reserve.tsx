@@ -37,9 +37,9 @@ const Reserve: React.FC<ReserveProps> = () => {
             }`}
          ></div>
          <div
-            className={`w-full max-sm:h-screen fixed ${
-               hide ? "top-0" : "-top-[110%]"
-            } left-0 z-[2000] px-5 max-sm:pb-20 max-sm:overflow-auto duration-700 ease-in bg-[#277c52] text-white`}
+            className={`w-full h-screen fixed top-0 left-0 ${
+               hide ? "block" : "hidden"
+            } left-0 z-[2000] px-5 max-sm:pb-20 overflow-auto duration-700 ease-in bg-[#277c52] text-white`}
          >
             <div className="max-w-[1000px] w-full m-auto py-10">
                <div className="flex items-center justify-between">
