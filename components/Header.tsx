@@ -1,10 +1,10 @@
 import { useState } from "react";
+import Link from "next/link";
 
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
-import Link from "next/link";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
@@ -29,6 +29,7 @@ function HideOnScroll(props: Props) {
 
 const Header: React.FC<any> = (props: Props) => {
    const [hide, setHide] = useState<boolean>(false);
+   const [state, setState] = useState(false);
 
    return (
       <>
@@ -57,14 +58,14 @@ const Header: React.FC<any> = (props: Props) => {
                         </div>
                      </div>
                      <div
-                        className={`max-sm:w-full max-sm:absolute z-[-1] ${
-                           hide ? "top-20" : "-top-[200%]"
-                        } left-0 max-sm:pt-10 max-sm:pb-5 duration-200 ease-in max-sm:bg-white`}
+                        className={`max-sm:w-full max-sm:absolute max-sm:z-[-1] ${
+                           hide ? "max-sm:top-20" : "max-sm:-top-[200%]"
+                        } max-sm:left-0 max-sm:pt-10 max-sm:pb-5 max-sm:duration-200 max-sm:ease-in max-sm:bg-white`}
                      >
                         <nav>
                            <ul className="flex max-sm:flex-col items-center font-semibold gap-10 max-md:gap-5 text-black ">
-                              <Link href={"#"}>
-                                 <li>Tours</li>
+                              <Link href="/tours">
+                                 <li className="cursor-pointer">Tours</li>
                               </Link>
                               <Link href={"#"}>
                                  <li>Agency</li>
